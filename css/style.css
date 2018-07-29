@@ -1059,13 +1059,13 @@ select {
   max-width: 60ch; }
 
 .cta {
-  background: linear-gradient(to right, #111, #666);
+  background: linear-gradient(to right, #f2f2f2, #fff);
   color: #fff;
   padding: 48pt 0;
   text-align: center; }
 
 .cta--reverse {
-  background: linear-gradient(to left, #111, #666); }
+  background: linear-gradient(to top, #fff, #f2f2f2); }
 
 .cta--plain {
   background: #111; }
@@ -1163,7 +1163,6 @@ select {
 .auth {
   padding-top: 102.66667px;
   border: 1px solid #eee;
-  background: #fafff463;
  }
 
 .auth__inner {
