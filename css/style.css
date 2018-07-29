@@ -1103,7 +1103,7 @@ select {
   display: block;
   cursor: pointer;
   color: #111;
-  font-size: 0.5rem;
+  font-size: 0.9rem;
   min-width: 33%;
   margin-bottom: 1.5rem; }
   @media (min-width: 600px) {
