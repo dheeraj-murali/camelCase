@@ -510,7 +510,7 @@ label {
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
   appearance: none;
-  border: 1px solid #eee;
+  border: 1px solid #dadada;
   width: 100%;
   transition: 0.7s;
   color: #111;
@@ -518,7 +518,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   font-weight: 400;
   padding: 10pt 20pt;
   border-radius: 30px;
-  background-color: #f7f7f7;
+  background-color: #f2f2f2;
   margin-bottom: 1.4em;
   display: block; }
   input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus {
@@ -528,7 +528,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
 
 textarea {
   appearance: none;
-  border: 1px solid #eee;
+  border: 1px solid #dadada;
   width: 100%;
   transition: 0.7s;
   color: #111;
@@ -536,7 +536,7 @@ textarea {
   font-weight: 400;
   padding: 12pt 24pt;
   border-radius: 30px;
-  background-color: #f7f7f7;
+  background-color: #f2f2f2;
   margin-bottom: 1.4em;
   display: block;
   resize: none;
@@ -1161,7 +1161,10 @@ select {
         border-color: #fff; } }
 
 .auth {
-  padding-top: 102.66667px; }
+  padding-top: 102.66667px;
+  border: 1px solid #eee;
+  background: #fafff463;
+ }
 
 .auth__inner {
   min-height: calc( 100vh - 188px);
