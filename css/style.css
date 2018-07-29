@@ -1085,7 +1085,8 @@ select {
 
 .footer {
   background-color: #ffffff;
-  padding: 3pt 0; }
+  padding: 5pt 0;
+ }
 
 .footer__inner {
   -js-display: flex;
@@ -1102,7 +1103,7 @@ select {
   display: block;
   cursor: pointer;
   color: #111;
-  font-size: 1.225rem;
+  font-size: 0.5rem;
   min-width: 33%;
   margin-bottom: 1.5rem; }
   @media (min-width: 600px) {
@@ -1121,7 +1122,7 @@ select {
   padding-top: 0.25rem;
   flex-wrap: wrap;
   flex-direction: column;
-  font-size: 0.3rem; }
+  font-size: 0.4rem; }
   @media (min-width: 992px) {
     .footer__data {
       flex-wrap: nowrap;
