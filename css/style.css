@@ -875,10 +875,10 @@ select {
   background-color: #111; }
 
 .hero__overlay--gradient {
-  background: linear-gradient(to right, #111, #666); }
+  background: linear-gradient(to right, #000, #222); }
 
 .hero__overlay--gradientVertical {
-  background: linear-gradient(to bottom, #111, #666); }
+  background: linear-gradient(to bottom, #000, #222); }
 
 .hero__mask {
   position: absolute;
@@ -912,7 +912,7 @@ select {
 .hero__text {
   opacity: 0.85;
   line-height: 1.7;
-  text-align: left;
+  text-align: center;
   font-size: 1.1em; }
 
 .hero .button {
@@ -983,8 +983,8 @@ select {
       margin: 32pt 0; } }
 
 .step__image {
-  max-height: 100px;
-  max-width: 222px;
+  max-height: 200px;
+  max-width: 322px;
   margin-top: 8pt;
   -webkit-user-drag: none;
   -khtml-user-drag: none;
