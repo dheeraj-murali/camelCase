@@ -90,15 +90,33 @@ document.addEventListener('DOMContentLoaded',function(){
             var runAnimation = setInterval(animateScroll, 16);
         };
 		// Define smooth scroll links
-		var scrollToggle = document.querySelectorAll('.scroll');
+		var scrollToggle1 = document.querySelectorAll('.scroll');
+		var scrollToggle2 = document.querySelectorAll('.ctn');
 		// For each smooth scroll link
-		[].forEach.call(scrollToggle, function (toggle) {
+		[].forEach.call(scrollToggle1, function (toggle) {
 			// When the smooth scroll link is clicked
 			toggle.addEventListener('click', function(e) {
 		// Prevent the default link behavior
 		e.preventDefault();
 		// Get anchor link and calculate distance from the top
 		var dataTarget = document.querySelector('.landing__section');
+		var dataSpeed = toggle.getAttribute('data-speed');
+	 	// If the anchor exists
+		if (dataTarget) {
+			// Scroll to the anchor
+				smoothScroll(dataTarget, dataSpeed || 700);
+			}
+		}, false);
+		});
+
+		// For each smooth scroll link
+		[].forEach.call(scrollToggle2, function (toggle) {
+			// When the smooth scroll link is clicked
+			toggle.addEventListener('click', function(e) {
+		// Prevent the default link behavior
+		e.preventDefault();
+		// Get anchor link and calculate distance from the top
+		var dataTarget = document.querySelector('.auth');
 		var dataSpeed = toggle.getAttribute('data-speed');
 	 	// If the anchor exists
 		if (dataTarget) {
@@ -128,6 +146,7 @@ document.addEventListener('DOMContentLoaded',function(){
 			if (lastScrollTop > 20){ addNewClass(document.getElementById('scrollToNext'),'invisible');} else {removeClass(document.getElementById('scrollToNext'),'invisible');}
 		}
 	});
+	
 
 	// Responsive mobile menu
 	// Create the menu 
