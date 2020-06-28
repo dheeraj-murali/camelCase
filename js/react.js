@@ -87,10 +87,20 @@ var App = function App() {
 				React.createElement(
 					'button',
 					{
-						'class': 'button ctn react-close',
+						'class': 'react-scoll-button',
 						onClick: handleClick
 					},
 					'know more'
+				),
+				React.createElement(
+					'button',
+					{
+						'class': 'button react-close',
+						onClick: function onClick() {
+							return setShowBanner(false);
+						}
+					},
+					'I\'m not intrested'
 				)
 			)
 		)

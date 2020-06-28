@@ -16,8 +16,21 @@
 	width: 90%;
 }
 
+.react-scoll-button {
+	background-color: #ffffff !important;
+	float: left;
+}
+
+.react-scoll-button:hover,
+.react-scoll-button:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
 .react-close {
-	background-color: #ffffff;
+	color: #ffffff !important;
+	border: none;
 	float: right;
 }
 

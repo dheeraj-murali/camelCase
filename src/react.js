@@ -78,10 +78,16 @@ const App = () => {
 					<div class='react-modal-content'>
 						<img src='../images/internship.jpg' />
 						<button
-							class='button ctn react-close'
+							class='react-scoll-button'
 							onClick={handleClick}
 						>
 							know more
+						</button>
+						<button
+							class='button react-close'
+							onClick={() => setShowBanner(false)}
+						>
+							I'm not intrested
 						</button>
 					</div>
 				</div>
