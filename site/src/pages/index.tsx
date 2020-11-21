@@ -1,6 +1,10 @@
-import { Text } from "@chakra-ui/react"
 import React from "react"
+import { Header } from "../components"
 
-const IndexPage = () => <Text color="blue.800">Camelcase coming soon</Text>
+const IndexPage = () => (
+  <>
+    <Header />
+  </>
+)
 
 export default IndexPage
