@@ -81,7 +81,7 @@ export const Team = () => {
     <Flex
       as="section"
       w="full"
-      py={{ base: "10", lg: "24" }}
+      py="20"
       px={{ base: "5", lg: "20" }}
       flexDir="column"
       alignItems="center"
@@ -92,7 +92,7 @@ export const Team = () => {
         Find the best
       </Heading>
 
-      <Wrap my="20" spacing="30px" align="center">
+      <Wrap my="20" spacing="30px" align="center" justify="center">
         <WrapItem>
           <Flex
             flexDir="column"
