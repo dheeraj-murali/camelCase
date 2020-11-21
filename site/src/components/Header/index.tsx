@@ -8,7 +8,7 @@ export const Header = () => (
     py={{ base: "5", lg: "10" }}
     px={{ base: "5", lg: "20" }}
     alignItems="center"
-    position="sticky"
+    position="absolute"
   >
     <Heading as="h1" fontSize="xl" fontWeight="light">
       CamelCase.in
