@@ -1,5 +1,5 @@
 import React from "react"
-import { Header, Hero } from "../components"
+import { Header, Hero } from "../containers"
 
 const IndexPage = () => (
   <>
