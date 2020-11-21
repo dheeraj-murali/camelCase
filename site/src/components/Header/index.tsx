@@ -9,7 +9,6 @@ export const Header = () => (
     px={{ base: "5", lg: "20" }}
     alignItems="center"
     position="absolute"
-    color="white"
   >
     <Heading as="h1" fontSize="xl" fontWeight="light">
       CamelCase.in
