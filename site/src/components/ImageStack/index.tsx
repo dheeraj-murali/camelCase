@@ -66,11 +66,11 @@ export const ImageStack = () => {
   `)
 
   return (
-    <Flex wrap="wrap" my={{ base: "12" }}>
+    <Flex wrap="wrap" my={{ base: "12" }} alignItems="center">
       <Box
         w={{ base: "full", md: "sm" }}
         h={{ base: "2xs", md: "sm" }}
-        my={{ base: "5", md: "5" }}
+        my="5"
         bg="gray.500"
         rounded="lg"
         overflow="hidden"
@@ -82,7 +82,11 @@ export const ImageStack = () => {
           style={{ width: "100%", height: "100%" }}
         />
       </Box>
-      <Stack direction={["row", "column"]} spacing="5" ml="5">
+      <Stack
+        direction={["row", "column"]}
+        spacing="5"
+        ml={{ base: "0", md: "5" }}
+      >
         <Box
           w={{ base: "100px", md: "150px" }}
           h={{ base: "100px", md: "150px" }}
