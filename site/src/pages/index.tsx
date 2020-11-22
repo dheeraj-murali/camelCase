@@ -1,11 +1,12 @@
 import React from "react"
-import { Header, Hero, Team } from "../containers"
+import { Header, Hero, Team, Work } from "../containers"
 
 const IndexPage = () => (
   <>
     <Header />
     <Hero />
     <Team />
+    <Work />
   </>
 )
 
