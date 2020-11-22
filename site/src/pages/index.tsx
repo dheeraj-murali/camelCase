@@ -1,5 +1,5 @@
 import React from "react"
-import { Header, Hero, Team, Work } from "../containers"
+import { Header, Hero, Services, Team, Work } from "../containers"
 
 const IndexPage = () => (
   <>
@@ -7,6 +7,7 @@ const IndexPage = () => (
     <Hero />
     <Team />
     <Work />
+    <Services />
   </>
 )
 

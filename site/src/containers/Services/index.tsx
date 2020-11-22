@@ -3,10 +3,10 @@ import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 import { SimpleCard } from "../../components"
 
-export const Team = () => {
+export const Services = () => {
   const data = useStaticQuery(graphql`
     query {
-      design: file(relativePath: { eq: "design.jpg" }) {
+      mobile: file(relativePath: { eq: "mobile-development.jpg" }) {
         childImageSharp {
           fluid(quality: 80) {
             src
@@ -25,7 +25,7 @@ export const Team = () => {
         }
       }
 
-      developer: file(relativePath: { eq: "developer.jpg" }) {
+      branding: file(relativePath: { eq: "branding.jpg" }) {
         childImageSharp {
           fluid(quality: 80) {
             src
@@ -44,7 +44,7 @@ export const Team = () => {
         }
       }
 
-      mentor: file(relativePath: { eq: "mentor.jpg" }) {
+      planning: file(relativePath: { eq: "planning.jpg" }) {
         childImageSharp {
           fluid(quality: 80) {
             src
@@ -74,43 +74,38 @@ export const Team = () => {
       flexDir="column"
       alignItems="center"
       justifyContent="center"
-      bgColor="red.400"
+      bgColor="gray.200"
     >
       <Heading as="h2" size="2xl">
-        Find the best
+        What else we do?
       </Heading>
 
       <Wrap my="20" spacing="30px" align="center" justify="center">
         <WrapItem>
           <SimpleCard
-            title="Designers"
-            text="We create hand crafted artwork and Illustrations unique to your
-                needs."
-            fluid={data.design.childImageSharp.fluid}
+            title="Mobile app development"
+            text="Android or iOS, we make amazing apps that work on any screens!"
+            fluid={data.mobile.childImageSharp.fluid}
+            flip
           />
         </WrapItem>
         <WrapItem>
           <SimpleCard
-            title="Developers"
-            text="We can build your open source projects. Present you solutions,
-            affordable and simple to the point."
-            fluid={data.developer.childImageSharp.fluid}
+            title="Branding"
+            text="We'll help you reach the ❤ s of a Million users!"
+            fluid={data.branding.childImageSharp.fluid}
+            flip
           />
         </WrapItem>
         <WrapItem>
           <SimpleCard
-            title="Mentors"
-            text="We teach to help our community grow with us because we believe
-            in a world of opportunities held together by ideas, knowledge
-            and love."
-            fluid={data.mentor.childImageSharp.fluid}
+            title="Strategic planning"
+            text="We are here to take your company to success, through the roads you've less traveled."
+            fluid={data.planning.childImageSharp.fluid}
+            flip
           />
         </WrapItem>
       </Wrap>
-
-      <Heading as="h2" size="xl">
-        in the industry
-      </Heading>
     </Flex>
   )
 }

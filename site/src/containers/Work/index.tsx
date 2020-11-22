@@ -8,7 +8,6 @@ import {
 } from "@chakra-ui/react"
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
-import { TeamCard } from "../../components"
 
 export const Work = () => {
   const data = useStaticQuery(graphql`
@@ -62,6 +61,7 @@ export const Work = () => {
           bgImg={`linear-gradient(#F5656580, #F5656580), url(${data.web.childImageSharp.fluid.src})`}
           bgSize="cover"
           bgPos="center center"
+          _hover={{ bg: "#F56565CC" }}
           p="5"
         >
           <Container>
@@ -84,6 +84,7 @@ export const Work = () => {
           bgImg={`linear-gradient(#2A436580, #2A436580), url(${data.framework.childImageSharp.fluid.src})`}
           bgSize="cover"
           bgPos="center center"
+          _hover={{ bg: "#2A4365CC" }}
           p="5"
         >
           <Container>
