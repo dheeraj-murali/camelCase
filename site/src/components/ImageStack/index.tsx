@@ -1,4 +1,4 @@
-import { Box, Flex, Square, Stack } from "@chakra-ui/react"
+import { Flex, Square, Stack } from "@chakra-ui/react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image/withIEPolyfill"
 import React from "react"
