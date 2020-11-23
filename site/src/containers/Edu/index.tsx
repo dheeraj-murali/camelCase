@@ -44,7 +44,7 @@ export const Edu = () => {
         <Center h="lg" w={{ base: "full", md: "50vw" }} p="5">
           <Container>
             <Heading color="blue.900" my="2">
-              <Logo text=" tech labs" color="white" size={3} />
+              <Logo text=" ED" color="white" size={3} />
             </Heading>
             <Text mb="10">
               We teach to help our community grow with us because we believe in
