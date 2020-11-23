@@ -3,7 +3,7 @@ import React from "react"
 
 export const TestimonialCard = () => {
   return (
-    <VStack align="left" spacing="24px" bg="white" shadow="lg" p="5" w="420px">
+    <VStack align="left" spacing="24px" bg="white" shadow="lg" p="5">
       <HStack spacing="24px">
         <Avatar name="Dan Abrahmov" size="xl" />
         <Box w="full" h="40px">

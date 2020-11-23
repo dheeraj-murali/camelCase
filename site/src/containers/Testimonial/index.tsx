@@ -4,6 +4,7 @@ import {
   Flex,
   Heading,
   HStack,
+  SimpleGrid,
   Text,
   VStack,
   Wrap,
@@ -90,20 +91,15 @@ export const Testimonial = () => {
         Our students love us
       </Heading>
 
-      <Wrap my="20" spacing="10px" align="center" justify="space-between">
-        <WrapItem>
-          <TestimonialCard />
-        </WrapItem>
-        <WrapItem>
-          <TestimonialCard />
-        </WrapItem>
-        <WrapItem>
-          <TestimonialCard />
-        </WrapItem>
-        <WrapItem>
-          <TestimonialCard />
-        </WrapItem>
-      </Wrap>
+      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10} mt="20">
+        <TestimonialCard />
+
+        <TestimonialCard />
+
+        <TestimonialCard />
+
+        <TestimonialCard />
+      </SimpleGrid>
     </Flex>
   )
 }
