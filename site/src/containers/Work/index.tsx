@@ -54,10 +54,10 @@ export const Work = () => {
 
   return (
     <Flex as="section" w="full" p="0">
-      <SimpleGrid columns={{ base: 1, md: 2 }}>
+      <SimpleGrid columns={{ base: 1, md: 2 }} w="full">
         <Center
           h="lg"
-          w={{ base: "full", md: "50vw" }}
+          w="full"
           bgImg={`linear-gradient(#F5656580, #F5656580), url(${data.web.childImageSharp.fluid.src})`}
           bgSize="cover"
           bgPos="center center"
@@ -80,7 +80,7 @@ export const Work = () => {
         <Center
           bg="blue.800"
           h="lg"
-          w={{ base: "full", md: "50vw" }}
+          w="full"
           bgImg={`linear-gradient(#2A436580, #2A436580), url(${data.framework.childImageSharp.fluid.src})`}
           bgSize="cover"
           bgPos="center center"
