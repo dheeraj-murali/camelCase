@@ -43,7 +43,7 @@ export const Edu = () => {
       <SimpleGrid columns={{ base: 1, md: 2 }} w="full">
         <Center w="full" p="5">
           <Container>
-            <Heading color="blue.900" my="2">
+            <Heading my="2">
               <Logo text=" ED" color="white" size={3} />
             </Heading>
             <Text mb="10">

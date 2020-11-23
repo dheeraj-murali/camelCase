@@ -40,6 +40,7 @@ export const Contact = () => {
       bgPos="center"
     >
       <VStack spacing={4}>
+        <Heading>Get in touch with us</Heading>
         <FormControl id="name" isRequired>
           <Input
             placeholder="Your name"
@@ -78,7 +79,7 @@ export const Contact = () => {
         <Button>Send message</Button>
       </VStack>
       <VStack align="left" pl="10">
-        <Heading color="blue.900">
+        <Heading>
           <Logo text=" tech labs" color="white" size={3} />
         </Heading>
         <Text fontWeight="bold" color="white">
@@ -93,8 +94,12 @@ export const Contact = () => {
         <Text fontWeight="bold" color="white">
           683426
         </Text>
-        <Text pt="5">0981267155</Text>
-        <Text>0981267153</Text>
+        <Text pt="5" fontWeight="bold" color="white">
+          0981267155
+        </Text>
+        <Text fontWeight="bold" color="white">
+          0981267153
+        </Text>
       </VStack>
     </SimpleGrid>
   )
