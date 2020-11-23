@@ -40,7 +40,7 @@ export const Edu = () => {
 
   return (
     <Flex as="section" w="full" p="0" bg="red.400">
-      <SimpleGrid columns={{ base: 1, md: 2 }}>
+      <SimpleGrid columns={{ base: 1, md: 2 }} w="full">
         <Center h="lg" w={{ base: "full", md: "50vw" }} p="5">
           <Container>
             <Heading color="blue.900" my="2">
