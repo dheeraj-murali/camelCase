@@ -41,7 +41,7 @@ export const Edu = () => {
   return (
     <Flex as="section" w="full" p="0" bg="red.400">
       <SimpleGrid columns={{ base: 1, md: 2 }} w="full">
-        <Center h="lg" w={{ base: "full", md: "50vw" }} p="5">
+        <Center w="full" p="5">
           <Container>
             <Heading color="blue.900" my="2">
               <Logo text=" ED" color="white" size={3} />
@@ -57,7 +57,7 @@ export const Edu = () => {
             <Button colorScheme="gray">Know more</Button>
           </Container>
         </Center>
-        <Center w={{ base: "full", md: "50vw" }} p="5">
+        <Center w="full" p="5">
           <Box
             w={{ base: "full" }}
             m={{ base: "0", md: "10" }}
