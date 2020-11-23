@@ -1,5 +1,6 @@
 import React from "react"
 import {
+  Contact,
   Edu,
   Header,
   Hero,
@@ -18,6 +19,7 @@ const IndexPage = () => (
     <Services />
     <Edu />
     <Testimonial />
+    <Contact />
   </>
 )
 
