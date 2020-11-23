@@ -13,6 +13,7 @@ import {
 } from "@chakra-ui/react"
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
+import { Logo } from "../../components"
 
 export const Contact = () => {
   const data = useStaticQuery(graphql`
@@ -78,10 +79,7 @@ export const Contact = () => {
       </VStack>
       <VStack align="left" pl="10">
         <Heading color="blue.900">
-          Camelcase{" "}
-          <Text as="span" color="white">
-            tech labs
-          </Text>
+          <Logo text=" tech labs" color="white" size={3} />
         </Heading>
         <Text fontWeight="bold" color="white">
           Lorem ipsum dolor sit amet.

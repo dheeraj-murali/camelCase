@@ -8,3 +8,9 @@ declare interface TeamItem {
 }
 
 declare interface TeamProps extends TeamItem {}
+
+declare interface LogoProps {
+  text: string
+  color: string
+  size: number
+}

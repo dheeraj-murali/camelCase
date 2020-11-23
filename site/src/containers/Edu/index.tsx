@@ -12,6 +12,7 @@ import {
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image/withIEPolyfill"
 import React from "react"
+import { Logo } from "../../components"
 
 export const Edu = () => {
   const data = useStaticQuery(graphql`
@@ -42,8 +43,8 @@ export const Edu = () => {
       <SimpleGrid columns={{ base: 1, md: 2 }}>
         <Center h="lg" w={{ base: "full", md: "50vw" }} p="5">
           <Container>
-            <Heading as="h2" mb="10">
-              Camelcase ED
+            <Heading color="blue.900" my="2">
+              <Logo text=" tech labs" color="white" size={3} />
             </Heading>
             <Text mb="10">
               We teach to help our community grow with us because we believe in

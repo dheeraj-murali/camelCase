@@ -1,3 +1,5 @@
 export { ImageStack } from "./ImageStack"
 export { SimpleCard } from "./SimpleCard"
 export { TestimonialCard } from "./TestimonialCard"
+export { CCCircle } from "./CCCircle"
+export { Logo } from "./Logo"
