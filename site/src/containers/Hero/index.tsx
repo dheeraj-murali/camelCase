@@ -1,12 +1,18 @@
-import { Flex, Heading, Text } from "@chakra-ui/react"
+import { Flex, Heading, Text, useToken } from "@chakra-ui/react"
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 import { ImageStack } from "../../components"
+import { HeroProps } from "../../types/props"
+import { generateTitle } from "../../utils/generateTitle"
 
-export const Hero = () => {
+export const Hero = (props: HeroProps) => {
+  const { title, subtitle } = props
+
+  const [highlightColor] = useToken("colors", ["red.500"])
+
   const data = useStaticQuery(graphql`
     query {
-      bg: file(relativePath: { eq: "Hero.png" }) {
+      bg: file(relativePath: { eq: "hero/heroBg.png" }) {
         childImageSharp {
           fluid(quality: 80) {
             src
@@ -30,13 +36,14 @@ export const Hero = () => {
       wrap="wrap-reverse"
     >
       <Flex maxW="md" flexDir="column">
-        <Heading size="2xl">
-          High quality applications ready for production{" "}
-          <Text as="span" color="red.500">
-            in no time.
-          </Text>
-        </Heading>
-        <Text py="5">Reimagine . Reinvent . Recreate</Text>
+        <Heading
+          size="2xl"
+          dangerouslySetInnerHTML={{
+            __html: generateTitle(title.text, title.highlight, highlightColor),
+          }}
+        />
+
+        <Text py="5">{subtitle}</Text>
       </Flex>
 
       <ImageStack />

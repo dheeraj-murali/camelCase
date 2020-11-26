@@ -28,7 +28,7 @@ const IndexPage = () => {
   return (
     <>
       <Header {...header} />
-      <Hero />
+      <Hero {...hero} />
       <Team />
       <Work />
       <Services />

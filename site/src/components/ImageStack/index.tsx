@@ -6,7 +6,7 @@ import React from "react"
 export const ImageStack = () => {
   const data = useStaticQuery(graphql`
     query {
-      img1: file(relativePath: { eq: "hero1.jpg" }) {
+      img1: file(relativePath: { eq: "hero/hero1.jpg" }) {
         childImageSharp {
           fluid(quality: 80) {
             src
@@ -25,7 +25,7 @@ export const ImageStack = () => {
         }
       }
 
-      img2: file(relativePath: { eq: "hero2.jpg" }) {
+      img2: file(relativePath: { eq: "hero/hero2.jpg" }) {
         childImageSharp {
           fluid(quality: 80) {
             src
@@ -44,7 +44,7 @@ export const ImageStack = () => {
         }
       }
 
-      img3: file(relativePath: { eq: "hero3.jpg" }) {
+      img3: file(relativePath: { eq: "hero/hero3.jpg" }) {
         childImageSharp {
           fluid(quality: 80) {
             src

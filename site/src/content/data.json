@@ -5,11 +5,9 @@
   "hero": {
     "title": {
       "text": "High quality applications production ready in no time.",
-      "highlight": "ready in no time"
+      "highlight": "production ready in no time"
     },
-    "subtitle": "Reimagine . Reinvent . Recreate",
-    "backgroundImage": "heroBg.png",
-    "heroImages": ["hero1.jpg", "hero2.jpg", "hero3.jpg"]
+    "subtitle": "Reimagine . Reinvent . Recreate"
   },
   "team": {
     "title": "Find the best",
