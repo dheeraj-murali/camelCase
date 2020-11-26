@@ -1,5 +1,9 @@
 import { FluidObject } from "gatsby-image"
 
+declare interface Title {
+  text: string
+  highlight: string
+}
 declare interface TeamItem {
   title: string
   text: string
@@ -13,4 +17,13 @@ declare interface LogoProps {
   text: string
   color: string
   size: number
+}
+
+declare interface HeaderProps {
+  logoExt: string
+}
+
+declare interface HeroProps {
+  title: Title
+  subtitle: string
 }

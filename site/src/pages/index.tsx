@@ -10,19 +10,34 @@ import {
   Testimonial,
   Work,
 } from "../containers"
+import data from "../content/data.json"
 
-const IndexPage = () => (
-  <>
-    <Header />
-    <Hero />
-    <Team />
-    <Work />
-    <Services />
-    <Edu />
-    <Testimonial />
-    <Contact />
-    <Footer />
-  </>
-)
+const IndexPage = () => {
+  const {
+    header,
+    hero,
+    team,
+    work,
+    services,
+    edu,
+    eduTestimonial,
+    contact,
+    footer,
+  } = data
+
+  return (
+    <>
+      <Header {...header} />
+      <Hero />
+      <Team />
+      <Work />
+      <Services />
+      <Edu />
+      <Testimonial />
+      <Contact />
+      <Footer />
+    </>
+  )
+}
 
 export default IndexPage
