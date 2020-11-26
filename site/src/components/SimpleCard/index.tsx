@@ -2,10 +2,13 @@ import { Box, Flex, Heading, Text } from "@chakra-ui/react"
 import { motion } from "framer-motion"
 import Img from "gatsby-image/withIEPolyfill"
 import React from "react"
-import { TeamProps } from "../../types/props"
+import { SimpleCardProps } from "../../types/props"
+import { getFluid } from "../../utils/getFluid"
 
-export const SimpleCard = (props: TeamProps) => {
-  const { fluid, text, title, flip } = props
+export const SimpleCard = (props: SimpleCardProps) => {
+  const { edges, text, title, flip, imageName } = props
+
+  console.log(edges)
 
   return (
     <Flex
@@ -36,7 +39,7 @@ export const SimpleCard = (props: TeamProps) => {
 
       <Box w="full" h="2xs">
         <Img
-          fluid={fluid}
+          fluid={getFluid(edges, imageName)}
           objectFit="cover"
           objectPosition="50% 50%"
           style={{ width: "100%", height: "100%" }}

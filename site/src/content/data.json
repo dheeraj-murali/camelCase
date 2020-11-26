@@ -14,17 +14,17 @@
     "subtitle": "in the industry",
     "items": [
       {
-        "image": "designers.jpg",
+        "imageName": "designers",
         "title": "Designers",
         "subtitle": "We create hand crafted artwork and Illustrations unique to your needs."
       },
       {
-        "image": "developers.jpg",
+        "imageName": "developers",
         "title": "Developers",
         "subtitle": "We can build your open source projects. Present you solutions, affordable and simple to the point."
       },
       {
-        "image": "mentors.jpg",
+        "imageName": "mentors",
         "title": "Mentors",
         "subtitle": "We teach to help our community grow with us because we believe in a world of opportunities held together by ideas, knowledge and love."
       }

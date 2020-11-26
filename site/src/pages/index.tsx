@@ -29,7 +29,7 @@ const IndexPage = () => {
     <>
       <Header {...header} />
       <Hero {...hero} />
-      <Team />
+      <Team {...team} />
       <Work />
       <Services />
       <Edu />

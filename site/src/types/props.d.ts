@@ -4,14 +4,25 @@ declare interface Title {
   text: string
   highlight: string
 }
-declare interface TeamItem {
+declare interface SimpleCardProps {
   title: string
   text: string
-  fluid: FluidObject | FluidObject[]
+  imageName: string
+  edges: any[]
   flip?: boolean
 }
 
-declare interface TeamProps extends TeamItem {}
+declare interface TeamItem {
+  title: string
+  subtitle: string
+  imageName: string
+}
+
+declare interface TeamProps {
+  title: string
+  subtitle: string
+  items: TeamItem[]
+}
 
 declare interface LogoProps {
   text: string
