@@ -1,0 +1,93 @@
+{
+  "header": {
+    "logoExt": ".in"
+  },
+  "hero": {
+    "title": {
+      "text": "High quality applications production ready in no time.",
+      "highlight": "ready in no time"
+    },
+    "subtitle": "Reimagine . Reinvent . Recreate",
+    "backgroundImage": "heroBg.png",
+    "heroImages": ["hero1.jpg", "hero2.jpg", "hero3.jpg"]
+  },
+  "team": {
+    "title": "Find the best",
+    "subtitle": "in the industry",
+    "items": [
+      {
+        "image": "designers.jpg",
+        "title": "Designers",
+        "subtitle": "We create hand crafted artwork and Illustrations unique to your needs."
+      },
+      {
+        "image": "developers.jpg",
+        "title": "Developers",
+        "subtitle": "We can build your open source projects. Present you solutions, affordable and simple to the point."
+      },
+      {
+        "image": "mentors.jpg",
+        "title": "Mentors",
+        "subtitle": "We teach to help our community grow with us because we believe in a world of opportunities held together by ideas, knowledge and love."
+      }
+    ]
+  },
+  "work": [
+    {
+      "image": "web-experts.jpg",
+      "title": "The web experts.",
+      "subtitle": "We create amazing web solutions for those who need to make a mark in this world in the most minimal, intuitive and elegant ways. We make it possible for them in the easiest and affordable ways possible, focusing on creating high-quality, unique, and easy to use websites."
+    },
+    {
+      "image": "framework-agnostic.jpg",
+      "title": "Framework agnostic.",
+      "subtitle": "We develop using advanced frameworks with minimal footprint. We are ready to build using Angular, React, Ionic, Spring, Django, MongoDB or whatever you prefer."
+    }
+  ],
+  "services": {
+    "title": "What do we do?",
+    "items": [
+      {
+        "image": "mobile-app-development.jpg",
+        "title": "Mobile app development",
+        "subtitle": "Android or iOS, we make amazing apps that work on any screens!"
+      },
+      {
+        "image": "branding.jpg",
+        "title": "Branding",
+        "subtitle": "We'll help you reach the ❤ s of a Million users!"
+      },
+      {
+        "image": "strategic-planning.jpg",
+        "title": "Strategic planning",
+        "subtitle": "We are here to take your company to success, through the roads you've less traveled."
+      }
+    ]
+  },
+  "edu": {
+    "logoExt": "ED",
+    "text": "We teach to help our community grow with us because we believe in a world of opportunities held together by ideas, knowledge and love. Our learning programme renders an exceptional learning experience in an interactive and innovative way. We make you Stand out from the rest by enabling you to become well-versed in emerging technologies.",
+    "image": "edu.jpg"
+  },
+  "eduTestimonial": {
+    "title": "Our students love us",
+    "testimonials": [
+      {
+        "username": "Student Name",
+        "role": "Some details",
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In nulla nihil incidunt suscipit ipsam adipisci vel molestias delectus repellendus provident nam cupiditate quibusdam officiis ut, magnam quae sint saepe libero.",
+        "image": ""
+      }
+    ]
+  },
+  "contact": {
+    "logoExt": "tech labs.",
+    "title": "Get in touch with us",
+    "address": {
+      "line1": "Lorem ipsum dolor sit amet."
+    },
+    "phoneNumber": ["0981267155", "0981267155"],
+    "email": ""
+  },
+  "footer": {}
+}
