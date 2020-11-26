@@ -1,64 +1,40 @@
 import { Flex, Heading, Wrap, WrapItem } from "@chakra-ui/react"
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
+import { v4 as uuid } from "uuid"
 import { SimpleCard } from "../../components"
+import { ServicesProps } from "../../types/props"
 
-export const Services = () => {
+export const Services = (props: ServicesProps) => {
+  const { items, title } = props
+
   const data = useStaticQuery(graphql`
     query {
-      mobile: file(relativePath: { eq: "mobile-development.jpg" }) {
-        childImageSharp {
-          fluid(quality: 80) {
-            src
-            srcSet
-            srcSetWebp
-            srcWebp
-            tracedSVG
-            sizes
-            originalName
-            originalImg
-            base64
-            aspectRatio
-            presentationHeight
-            presentationWidth
-          }
+      images: allFile(
+        filter: {
+          extension: { regex: "/(jpg)/" }
+          relativePath: { regex: "/(services)/" }
         }
-      }
-
-      branding: file(relativePath: { eq: "branding.jpg" }) {
-        childImageSharp {
-          fluid(quality: 80) {
-            src
-            srcSet
-            srcSetWebp
-            srcWebp
-            tracedSVG
-            sizes
-            originalName
-            originalImg
-            base64
-            aspectRatio
-            presentationHeight
-            presentationWidth
-          }
-        }
-      }
-
-      planning: file(relativePath: { eq: "planning.jpg" }) {
-        childImageSharp {
-          fluid(quality: 80) {
-            src
-            srcSet
-            srcSetWebp
-            srcWebp
-            tracedSVG
-            sizes
-            originalName
-            originalImg
-            base64
-            aspectRatio
-            presentationHeight
-            presentationWidth
+      ) {
+        edges {
+          node {
+            name
+            childImageSharp {
+              fluid(quality: 80) {
+                src
+                srcSet
+                srcSetWebp
+                srcWebp
+                tracedSVG
+                sizes
+                originalName
+                originalImg
+                base64
+                aspectRatio
+                presentationHeight
+                presentationWidth
+              }
+            }
           }
         }
       }
@@ -77,34 +53,21 @@ export const Services = () => {
       bgColor="gray.200"
     >
       <Heading as="h2" size="2xl">
-        What else we do?
+        {title}
       </Heading>
 
       <Wrap my="20" spacing="30px" align="center" justify="center">
-        <WrapItem>
-          <SimpleCard
-            title="Mobile app development"
-            text="Android or iOS, we make amazing apps that work on any screens!"
-            fluid={data.mobile.childImageSharp.fluid}
-            flip
-          />
-        </WrapItem>
-        <WrapItem>
-          <SimpleCard
-            title="Branding"
-            text="We'll help you reach the ❤ s of a Million users!"
-            fluid={data.branding.childImageSharp.fluid}
-            flip
-          />
-        </WrapItem>
-        <WrapItem>
-          <SimpleCard
-            title="Strategic planning"
-            text="We are here to take your company to success, through the roads you've less traveled."
-            fluid={data.planning.childImageSharp.fluid}
-            flip
-          />
-        </WrapItem>
+        {items.map(item => (
+          <WrapItem key={uuid()}>
+            <SimpleCard
+              title={item.title}
+              text={item.subtitle}
+              edges={data.images.edges}
+              imageName={item.imageName}
+              flip
+            />
+          </WrapItem>
+        ))}
       </Wrap>
     </Flex>
   )

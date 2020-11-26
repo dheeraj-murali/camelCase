@@ -54,3 +54,14 @@ declare interface WorkProps {
 declare interface WorkBannerProps extends WorkItem {
   edges: any
 }
+
+declare interface ServiceItem {
+  imageName: string
+  title: string
+  subtitle: string
+}
+
+declare interface ServicesProps {
+  title: string
+  items: ServiceItem[]
+}

@@ -52,17 +52,17 @@
     "title": "What do we do?",
     "items": [
       {
-        "image": "mobile-app-development.jpg",
+        "imageName": "mobile-app-development",
         "title": "Mobile app development",
         "subtitle": "Android or iOS, we make amazing apps that work on any screens!"
       },
       {
-        "image": "branding.jpg",
+        "imageName": "branding",
         "title": "Branding",
         "subtitle": "We'll help you reach the ❤ s of a Million users!"
       },
       {
-        "image": "strategic-planning.jpg",
+        "imageName": "strategic-planning",
         "title": "Strategic planning",
         "subtitle": "We are here to take your company to success, through the roads you've less traveled."
       }
