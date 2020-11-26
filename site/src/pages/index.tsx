@@ -30,7 +30,7 @@ const IndexPage = () => {
       <Header {...header} />
       <Hero {...hero} />
       <Team {...team} />
-      <Work />
+      <Work {...work} />
       <Services />
       <Edu />
       <Testimonial />

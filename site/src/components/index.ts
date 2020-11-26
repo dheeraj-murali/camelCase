@@ -1,5 +1,6 @@
+export { CCCircle } from "./CCCircle"
 export { ImageStack } from "./ImageStack"
+export { Logo } from "./Logo"
 export { SimpleCard } from "./SimpleCard"
 export { TestimonialCard } from "./TestimonialCard"
-export { CCCircle } from "./CCCircle"
-export { Logo } from "./Logo"
+export { WorkBanner } from "./WorkBanner"

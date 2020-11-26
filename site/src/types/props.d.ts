@@ -38,3 +38,19 @@ declare interface HeroProps {
   title: Title
   subtitle: string
 }
+
+declare interface WorkItem {
+  imageName: string
+  title: string
+  subtitle: string
+  bgColor: "primary" | "secondary"
+  textColor: "black" | "white"
+}
+
+declare interface WorkProps {
+  items: WorkItem[]
+}
+
+declare interface WorkBannerProps extends WorkItem {
+  edges: any
+}

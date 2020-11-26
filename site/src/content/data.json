@@ -30,18 +30,24 @@
       }
     ]
   },
-  "work": [
-    {
-      "image": "web-experts.jpg",
-      "title": "The web experts.",
-      "subtitle": "We create amazing web solutions for those who need to make a mark in this world in the most minimal, intuitive and elegant ways. We make it possible for them in the easiest and affordable ways possible, focusing on creating high-quality, unique, and easy to use websites."
-    },
-    {
-      "image": "framework-agnostic.jpg",
-      "title": "Framework agnostic.",
-      "subtitle": "We develop using advanced frameworks with minimal footprint. We are ready to build using Angular, React, Ionic, Spring, Django, MongoDB or whatever you prefer."
-    }
-  ],
+  "work": {
+    "items": [
+      {
+        "textColor": "black",
+        "bgColor": "primary",
+        "imageName": "web-experts",
+        "title": "The web experts.",
+        "subtitle": "We create amazing web solutions for those who need to make a mark in this world in the most minimal, intuitive and elegant ways. We make it possible for them in the easiest and affordable ways possible, focusing on creating high-quality, unique, and easy to use websites."
+      },
+      {
+        "textColor": "white",
+        "bgColor": "secondary",
+        "imageName": "framework-agnostic",
+        "title": "Framework agnostic.",
+        "subtitle": "We develop using advanced frameworks with minimal footprint. We are ready to build using Angular, React, Ionic, Spring, Django, MongoDB or whatever you prefer."
+      }
+    ]
+  },
   "services": {
     "title": "What do we do?",
     "items": [

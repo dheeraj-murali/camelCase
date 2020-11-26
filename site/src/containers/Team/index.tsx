@@ -1,6 +1,7 @@
 import { Flex, Heading, Wrap, WrapItem } from "@chakra-ui/react"
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
+import { v4 as uuid } from "uuid"
 import { SimpleCard } from "../../components"
 import { TeamProps } from "../../types/props"
 
@@ -57,7 +58,7 @@ export const Team = (props: TeamProps) => {
 
       <Wrap my="20" spacing="30px" align="center" justify="center">
         {items.map(item => (
-          <WrapItem key={item.title}>
+          <WrapItem key={uuid()}>
             <SimpleCard
               title={item.title}
               text={item.subtitle}
