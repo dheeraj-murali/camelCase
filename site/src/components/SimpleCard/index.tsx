@@ -8,8 +8,6 @@ import { getFluid } from "../../utils/getFluid"
 export const SimpleCard = (props: SimpleCardProps) => {
   const { edges, text, title, flip, imageName } = props
 
-  console.log(edges)
-
   return (
     <Flex
       as={motion.div}
