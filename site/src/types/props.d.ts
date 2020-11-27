@@ -65,3 +65,22 @@ declare interface ServicesProps {
   title: string
   items: ServiceItem[]
 }
+
+declare interface EduProps {
+  logoExt: string
+  text: string
+}
+
+declare interface Testimonial {
+  image: string
+  name: string
+  role: string
+  comment: string
+}
+
+declare interface TestimonialProps {
+  title: string
+  testimonials: Testimonial[]
+}
+
+declare interface TestimonialCardProps extends Testimonial {}

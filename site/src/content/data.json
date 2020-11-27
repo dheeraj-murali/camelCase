@@ -69,18 +69,17 @@
     ]
   },
   "edu": {
-    "logoExt": "ED",
-    "text": "We teach to help our community grow with us because we believe in a world of opportunities held together by ideas, knowledge and love. Our learning programme renders an exceptional learning experience in an interactive and innovative way. We make you Stand out from the rest by enabling you to become well-versed in emerging technologies.",
-    "image": "edu.jpg"
+    "logoExt": " ED",
+    "text": "We teach to help our community grow with us because we believe in a world of opportunities held together by ideas, knowledge and love. Our learning programme renders an exceptional learning experience in an interactive and innovative way. We make you Stand out from the rest by enabling you to become well-versed in emerging technologies."
   },
   "eduTestimonial": {
     "title": "Our students love us",
     "testimonials": [
       {
-        "username": "Student Name",
+        "name": "Student Name",
         "role": "Some details",
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In nulla nihil incidunt suscipit ipsam adipisci vel molestias delectus repellendus provident nam cupiditate quibusdam officiis ut, magnam quae sint saepe libero.",
-        "image": ""
+        "image": "student-name"
       }
     ]
   },

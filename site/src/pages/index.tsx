@@ -33,8 +33,8 @@ const IndexPage = () => {
       {/* @ts-ignore */}
       <Work {...work} />
       <Services {...services} />
-      <Edu />
-      <Testimonial />
+      <Edu {...edu} />
+      <Testimonial {...eduTestimonial} />
       <Contact />
       <Footer />
     </>

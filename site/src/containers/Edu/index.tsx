@@ -6,18 +6,20 @@ import {
   Flex,
   Heading,
   SimpleGrid,
-  Square,
   Text,
 } from "@chakra-ui/react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image/withIEPolyfill"
 import React from "react"
 import { Logo } from "../../components"
+import { EduProps } from "../../types/props"
 
-export const Edu = () => {
+export const Edu = (props: EduProps) => {
+  const { logoExt, text } = props
+
   const data = useStaticQuery(graphql`
     query {
-      edu: file(relativePath: { eq: "education.jpg" }) {
+      edu: file(relativePath: { eq: "edu/education.jpg" }) {
         childImageSharp {
           fluid(quality: 80) {
             src
@@ -43,18 +45,10 @@ export const Edu = () => {
       <SimpleGrid columns={{ base: 1, md: 2 }} w="full">
         <Center w="full" p="5">
           <Container>
-            <Heading my="2">
-              <Logo text=" ED" color="white" size={3} />
+            <Heading>
+              <Logo text={logoExt} color="white" size={3} />
             </Heading>
-            <Text mb="10">
-              We teach to help our community grow with us because we believe in
-              a world of opportunities held together by ideas, knowledge and
-              love. Our learning programme renders an exceptional learning
-              experience in an interactive and innovative way. We make you Stand
-              out from the rest by enabling you to become well-versed in
-              emerging technologies
-            </Text>
-            <Button colorScheme="gray">Know more</Button>
+            <Text my="10">{text}</Text>
           </Container>
         </Center>
         <Center w="full" p="5">

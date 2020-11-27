@@ -1,22 +1,32 @@
 import { Avatar, Box, Heading, HStack, Text, VStack } from "@chakra-ui/react"
 import React from "react"
+import { TestimonialCardProps } from "../../types/props"
+import { getSrc } from "../../utils/getSrc"
 
-export const TestimonialCard = () => {
+export const TestimonialCard = (props: TestimonialCardProps) => {
+  const { comment, image, name, role } = props
+
   return (
-    <VStack align="left" spacing="24px" bg="white" shadow="lg" p="5">
+    <VStack align="center" spacing="24px" bg="white" shadow="lg" p="5">
       <HStack spacing="24px">
-        <Avatar name="Dan Abrahmov" size="xl" />
+        <Avatar
+          name={name}
+          size="lg"
+          src={`../../assets/images/EDTesimonial/${image}.jpg`}
+        />
         <Box w="full" h="40px">
-          <Heading size="md">Student Name</Heading>
-          <Text>Some dtails</Text>
+          <Heading size="md">{name}</Heading>
+          <Text fontSize="sm">{role}</Text>
         </Box>
       </HStack>
 
-      <Text fontSize="2xs" fontWeight="light" fontStyle="italic">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. In nulla nihil
-        incidunt suscipit ipsam adipisci vel molestias delectus repellendus
-        provident nam cupiditate quibusdam officiis ut, magnam quae sint saepe
-        libero.
+      <Text
+        textAlign="center"
+        fontSize="sm"
+        fontWeight="light"
+        fontStyle="italic"
+      >
+        {comment}
       </Text>
     </VStack>
   )

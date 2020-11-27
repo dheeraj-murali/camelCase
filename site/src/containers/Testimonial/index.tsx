@@ -1,80 +1,11 @@
-import {
-  Avatar,
-  Box,
-  Flex,
-  Heading,
-  HStack,
-  SimpleGrid,
-  Text,
-  VStack,
-  Wrap,
-  WrapItem,
-} from "@chakra-ui/react"
-import { graphql, useStaticQuery } from "gatsby"
+import { Flex, Heading, SimpleGrid } from "@chakra-ui/react"
 import React from "react"
-import { SimpleCard, TestimonialCard } from "../../components"
+import { TestimonialCard } from "../../components"
+import { TestimonialProps } from "../../types/props"
+import { v4 as uuid } from "uuid"
 
-export const Testimonial = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      design: file(relativePath: { eq: "design.jpg" }) {
-        childImageSharp {
-          fluid(quality: 80) {
-            src
-            srcSet
-            srcSetWebp
-            srcWebp
-            tracedSVG
-            sizes
-            originalName
-            originalImg
-            base64
-            aspectRatio
-            presentationHeight
-            presentationWidth
-          }
-        }
-      }
-
-      developer: file(relativePath: { eq: "developer.jpg" }) {
-        childImageSharp {
-          fluid(quality: 80) {
-            src
-            srcSet
-            srcSetWebp
-            srcWebp
-            tracedSVG
-            sizes
-            originalName
-            originalImg
-            base64
-            aspectRatio
-            presentationHeight
-            presentationWidth
-          }
-        }
-      }
-
-      mentor: file(relativePath: { eq: "mentor.jpg" }) {
-        childImageSharp {
-          fluid(quality: 80) {
-            src
-            srcSet
-            srcSetWebp
-            srcWebp
-            tracedSVG
-            sizes
-            originalName
-            originalImg
-            base64
-            aspectRatio
-            presentationHeight
-            presentationWidth
-          }
-        }
-      }
-    }
-  `)
+export const Testimonial = (props: TestimonialProps) => {
+  const { testimonials, title } = props
 
   return (
     <Flex
@@ -88,17 +19,15 @@ export const Testimonial = () => {
       bgColor="red.400"
     >
       <Heading as="h2" size="xl">
-        Our students love us
+        {title}
       </Heading>
 
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10} mt="20">
-        <TestimonialCard />
-
-        <TestimonialCard />
-
-        <TestimonialCard />
-
-        <TestimonialCard />
+      <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10} mt="20">
+        {testimonials.map(testimonial => (
+          <>
+            <TestimonialCard {...testimonial} key={uuid()} />
+          </>
+        ))}
       </SimpleGrid>
     </Flex>
   )
