@@ -27,7 +27,6 @@ declare interface TeamProps {
 declare interface LogoProps {
   text: string
   color: string
-  size: number
 }
 
 declare interface HeaderProps {

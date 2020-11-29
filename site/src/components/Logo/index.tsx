@@ -1,10 +1,10 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react"
+import { Flex, Heading, Text } from "@chakra-ui/react"
 import React from "react"
 import { CCCircle } from "../../components"
 import { LogoProps } from "../../types/props"
 
 export const Logo = (props: LogoProps) => {
-  const { color, text, size = 1 } = props
+  const { color, text } = props
 
   return (
     <Flex alignItems="center" position="relative" h="full" w="full">
