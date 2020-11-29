@@ -84,17 +84,17 @@
     ]
   },
   "contact": {
-    "logoExt": " tech labs.",
+    "logoExt": " tech labs Pvt. Ltd.",
     "title": "Get in touch with us",
     "address": {
-      "line1": "Lorem ipsum dolor sit amet.",
-      "line2": "",
-      "pinCode": "",
-      "state": "",
-      "country": ""
+      "line1": "Erumathala PO, Keezhmad",
+      "line2": "Aluva, Ernakulam",
+      "pinCode": "683112",
+      "state": "Kerala",
+      "country": "India"
     },
-    "phoneNumbers": ["0981267155", "0981267155"],
-    "email": ""
+    "phoneNumbers": ["+91 77366 57159", "+91 75610 35635"],
+    "email": "camelcasetechlab@gmail.com"
   },
   "footer": {}
 }

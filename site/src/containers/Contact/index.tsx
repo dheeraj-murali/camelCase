@@ -1,12 +1,10 @@
 import {
+  Box,
   Button,
-  FormControl,
-  FormHelperText,
+  Flex,
   Heading,
-  Input,
   SimpleGrid,
   Text,
-  Textarea,
   VStack,
 } from "@chakra-ui/react"
 import { graphql, useStaticQuery } from "gatsby"
@@ -14,6 +12,7 @@ import React from "react"
 import { v4 as uuid } from "uuid"
 import { ContactForm, Logo } from "../../components"
 import { ContactProps } from "../../types/props"
+import { FaPhoneAlt } from "react-icons/fa"
 
 export const Contact = (props: ContactProps) => {
   const { title, logoExt, address, email, phoneNumbers } = props
@@ -42,8 +41,9 @@ export const Contact = (props: ContactProps) => {
       bgPos="center"
     >
       <ContactForm email={email} title={title} />
-      <VStack align="left" pl="10">
-        <Heading>
+
+      <VStack align="left" w="full" pl={{ lg: "20" }}>
+        <Heading w="full">
           <Logo text={logoExt} color="white" size={3} />
         </Heading>
         <Text fontWeight="bold" color="white">
@@ -56,10 +56,10 @@ export const Contact = (props: ContactProps) => {
           {`${address.state}, ${address.country}`}
         </Text>
         <Text fontWeight="bold" color="white">
-          {address.pinCode}
+          PIN {address.pinCode}
         </Text>
         {phoneNumbers.map(number => (
-          <Text key={uuid()} pt="5" fontWeight="bold" color="white">
+          <Text fontWeight="bold" key={uuid()} color="white">
             {number}
           </Text>
         ))}

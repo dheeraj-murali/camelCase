@@ -104,3 +104,11 @@ declare interface ContactFormProps {
   email: string
   title: string
 }
+
+declare interface FormValues {
+  name: string
+  email: string
+  phone: string
+  message: string
+  "form-name"?: string
+}
