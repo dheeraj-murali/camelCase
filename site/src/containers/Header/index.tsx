@@ -15,7 +15,7 @@ export const Header = (props: HeaderProps) => {
       alignItems="center"
       position="absolute"
     >
-      <Logo text={logoExt} color="red.500" size={2} />
+      <Logo text={logoExt} color="red.500" />
     </Flex>
   )
 }

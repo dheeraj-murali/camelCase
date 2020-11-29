@@ -1,6 +1,5 @@
 import {
   Box,
-  Button,
   Center,
   Container,
   Flex,
@@ -46,7 +45,7 @@ export const Edu = (props: EduProps) => {
         <Center w="full" p="5">
           <Container>
             <Heading>
-              <Logo text={logoExt} color="white" size={3} />
+              <Logo text={logoExt} color="white" />
             </Heading>
             <Text my="10">{text}</Text>
           </Container>
