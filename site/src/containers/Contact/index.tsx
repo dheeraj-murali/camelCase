@@ -1,18 +1,9 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Heading,
-  SimpleGrid,
-  Text,
-  VStack,
-} from "@chakra-ui/react"
+import { Heading, SimpleGrid, Text, VStack } from "@chakra-ui/react"
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 import { v4 as uuid } from "uuid"
 import { ContactForm, Logo } from "../../components"
 import { ContactProps } from "../../types/props"
-import { FaPhoneAlt } from "react-icons/fa"
 
 export const Contact = (props: ContactProps) => {
   const { title, logoExt, address, email, phoneNumbers } = props
