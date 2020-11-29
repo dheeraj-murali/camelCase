@@ -23,7 +23,7 @@ const initialValues: FormValues = {
 }
 
 export const ContactForm = (props: ContactFormProps) => {
-  const { title, email } = props
+  const { title } = props
 
   const toast = useToast()
 
@@ -67,7 +67,9 @@ export const ContactForm = (props: ContactFormProps) => {
       <Heading color="white">{title}</Heading>
 
       <form
+        name="contact"
         data-netlify="true"
+        data-netlify-honeypot="bot-field"
         onSubmit={formik.handleSubmit}
         style={{ width: "100%", height: "100%" }}
         method="post"
