@@ -14,18 +14,13 @@ export const TestimonialCard = (props: TestimonialCardProps) => {
           size="lg"
           src={`../../assets/images/EDTesimonial/${image}.jpg`}
         />
-        <Box w="full" h="40px">
+        <Box w="full" h="full">
           <Heading size="md">{name}</Heading>
           <Text fontSize="sm">{role}</Text>
         </Box>
       </HStack>
 
-      <Text
-        textAlign="center"
-        fontSize="sm"
-        fontWeight="light"
-        fontStyle="italic"
-      >
+      <Text fontSize="sm" fontWeight="light" fontStyle="italic">
         {comment}
       </Text>
     </VStack>

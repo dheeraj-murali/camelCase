@@ -8,6 +8,7 @@ const year = date.getFullYear()
 export const Footer = () => {
   return (
     <Flex
+      flexDir={{ base: "column", lg: "row" }}
       as="footer"
       py={{ base: "10", lg: "10" }}
       px={{ base: "5", lg: "10" }}
@@ -18,7 +19,7 @@ export const Footer = () => {
         <Logo color="white" text=".in" />
       </Box>
 
-      <VStack color="white" align="left">
+      <VStack color="white" align="left" py={{ base: "10", lg: "0" }}>
         <Text fontSize="xs">
           © {year} camelcase tech labs Ptv. Ltd. All rights reserved.
         </Text>

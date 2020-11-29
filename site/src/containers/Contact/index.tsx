@@ -35,7 +35,7 @@ export const Contact = (props: ContactProps) => {
 
       <VStack align="left" w="full" pl={{ lg: "20" }}>
         <Heading w="full">
-          <Logo text={logoExt} color="white" size={3} />
+          <Logo text={logoExt} color="white" />
         </Heading>
         <Text fontWeight="bold" color="white">
           {address.line1}

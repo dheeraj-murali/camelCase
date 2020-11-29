@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Center,
   Container,
   Flex,
@@ -10,7 +11,7 @@ import {
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image/withIEPolyfill"
 import React from "react"
-import { Logo } from "../../components"
+import { CampaignModal, Logo } from "../../components"
 import { EduProps } from "../../types/props"
 
 export const Edu = (props: EduProps) => {
@@ -48,6 +49,7 @@ export const Edu = (props: EduProps) => {
               <Logo text={logoExt} color="white" />
             </Heading>
             <Text my="10">{text}</Text>
+            <CampaignModal />
           </Container>
         </Center>
         <Center w="full" p="5">

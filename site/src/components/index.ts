@@ -1,3 +1,4 @@
+export { CampaignModal } from "./CampaignModal"
 export { CCCircle } from "./CCCircle"
 export { ContactForm } from "./ContactForm"
 export { ImageStack } from "./ImageStack"
