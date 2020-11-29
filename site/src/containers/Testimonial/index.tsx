@@ -24,9 +24,7 @@ export const Testimonial = (props: TestimonialProps) => {
 
       <SimpleGrid columns={{ base: 1, md: 2, xl: 3 }} spacing={10} mt="20">
         {testimonials.map(testimonial => (
-          <>
-            <TestimonialCard {...testimonial} key={uuid()} />
-          </>
+          <TestimonialCard {...testimonial} key={uuid()} />
         ))}
       </SimpleGrid>
     </Flex>
