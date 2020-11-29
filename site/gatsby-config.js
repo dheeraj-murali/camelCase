@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#FFFFFF`,
         theme_color: `#000000`,
         display: `minimal-ui`,
-        icon: `src/assets/images/camelcase_logo.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/logo.png`, // This path is relative to the root of the site.
       },
     },
     "@chakra-ui/gatsby-plugin",
