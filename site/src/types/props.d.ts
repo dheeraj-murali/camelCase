@@ -84,3 +84,23 @@ declare interface TestimonialProps {
 }
 
 declare interface TestimonialCardProps extends Testimonial {}
+
+declare interface Address {
+  line1: string
+  line2: string
+  pinCode: string
+  state: string
+  country: string
+}
+declare interface ContactProps {
+  logoExt: string
+  title: string
+  address: Address
+  phoneNumbers: string[]
+  email: string
+}
+
+declare interface ContactFormProps {
+  email: string
+  title: string
+}

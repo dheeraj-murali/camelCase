@@ -35,7 +35,7 @@ const IndexPage = () => {
       <Services {...services} />
       <Edu {...edu} />
       <Testimonial {...eduTestimonial} />
-      <Contact />
+      <Contact {...contact} />
       <Footer />
     </>
   )

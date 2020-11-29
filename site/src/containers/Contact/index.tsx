@@ -1,9 +1,7 @@
 import {
-  Box,
   Button,
   FormControl,
   FormHelperText,
-  FormLabel,
   Heading,
   Input,
   SimpleGrid,
@@ -13,12 +11,16 @@ import {
 } from "@chakra-ui/react"
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
-import { Logo } from "../../components"
+import { v4 as uuid } from "uuid"
+import { ContactForm, Logo } from "../../components"
+import { ContactProps } from "../../types/props"
 
-export const Contact = () => {
+export const Contact = (props: ContactProps) => {
+  const { title, logoExt, address, email, phoneNumbers } = props
+
   const data = useStaticQuery(graphql`
     query {
-      bg: file(relativePath: { eq: "contact.jpg" }) {
+      bg: file(relativePath: { eq: "contact/background.jpg" }) {
         childImageSharp {
           fluid(quality: 80) {
             src
@@ -39,67 +41,28 @@ export const Contact = () => {
       bgSize="cover"
       bgPos="center"
     >
-      <VStack spacing={4}>
-        <Heading>Get in touch with us</Heading>
-        <FormControl id="name" isRequired>
-          <Input
-            placeholder="Your name"
-            type="text"
-            bg="white"
-            errorBorderColor="red.300"
-          />
-        </FormControl>
-        <FormControl id="email" isRequired>
-          <Input
-            placeholder="Your email address"
-            type="email"
-            bg="white"
-            errorBorderColor="red.300"
-          />
-          <FormHelperText color="white">
-            We'll never share your email.
-          </FormHelperText>
-        </FormControl>
-        <FormControl id="phone">
-          <Input
-            placeholder="Your phone number"
-            type="phone"
-            bg="white"
-            errorBorderColor="red.300"
-          />
-        </FormControl>
-        <FormControl id="message">
-          <Textarea
-            placeholder="Your message"
-            resize="vertical"
-            bg="white"
-            rounded="lg"
-          />
-        </FormControl>
-        <Button>Send message</Button>
-      </VStack>
+      <ContactForm email={email} title={title} />
       <VStack align="left" pl="10">
         <Heading>
-          <Logo text=" tech labs" color="white" size={3} />
+          <Logo text={logoExt} color="white" size={3} />
         </Heading>
         <Text fontWeight="bold" color="white">
-          Lorem ipsum dolor sit amet.
+          {address.line1}
         </Text>
         <Text fontWeight="bold" color="white">
-          consectetur adipisicing elit.
+          {address.line2}
         </Text>
         <Text fontWeight="bold" color="white">
-          Kochi, Kerala
+          {`${address.state}, ${address.country}`}
         </Text>
         <Text fontWeight="bold" color="white">
-          683426
+          {address.pinCode}
         </Text>
-        <Text pt="5" fontWeight="bold" color="white">
-          0981267155
-        </Text>
-        <Text fontWeight="bold" color="white">
-          0981267153
-        </Text>
+        {phoneNumbers.map(number => (
+          <Text key={uuid()} pt="5" fontWeight="bold" color="white">
+            {number}
+          </Text>
+        ))}
       </VStack>
     </SimpleGrid>
   )

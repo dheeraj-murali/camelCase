@@ -1,4 +1,5 @@
 export { CCCircle } from "./CCCircle"
+export { ContactForm } from "./ContactForm"
 export { ImageStack } from "./ImageStack"
 export { Logo } from "./Logo"
 export { SimpleCard } from "./SimpleCard"

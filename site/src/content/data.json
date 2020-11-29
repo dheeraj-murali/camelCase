@@ -84,12 +84,16 @@
     ]
   },
   "contact": {
-    "logoExt": "tech labs.",
+    "logoExt": " tech labs.",
     "title": "Get in touch with us",
     "address": {
-      "line1": "Lorem ipsum dolor sit amet."
+      "line1": "Lorem ipsum dolor sit amet.",
+      "line2": "",
+      "pinCode": "",
+      "state": "",
+      "country": ""
     },
-    "phoneNumber": ["0981267155", "0981267155"],
+    "phoneNumbers": ["0981267155", "0981267155"],
     "email": ""
   },
   "footer": {}
