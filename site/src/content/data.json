@@ -76,9 +76,9 @@
     "title": "Our students love us",
     "testimonials": [
       {
-        "name": "Student Name",
-        "role": "Some details",
-        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In nulla nihil incidunt suscipit ipsam adipisci vel molestias delectus repellendus provident nam cupiditate quibusdam officiis ut, magnam quae sint saepe libero.",
+        "name": "Surya Rajendran",
+        "role": "Customer Relation Officer, Pune",
+        "comment": "Great introduction to Python and programming as a whole. After trying many tutorials and exploring many resources to come back to my field.i have finally found one that works!This class made it easy and fun to get into.",
         "image": "student-name"
       }
     ]
