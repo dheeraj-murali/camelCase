@@ -5,6 +5,7 @@ import {
   Footer,
   Header,
   Hero,
+  SEO,
   Services,
   Team,
   Testimonial,
@@ -22,11 +23,11 @@ const IndexPage = () => {
     edu,
     eduTestimonial,
     contact,
-    footer,
   } = data
 
   return (
     <>
+      <SEO />
       <Header {...header} />
       <Hero {...hero} />
       <Team {...team} />

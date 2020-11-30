@@ -41,14 +41,16 @@ export const Edu = (props: EduProps) => {
   `)
 
   return (
-    <Flex as="section" w="full" p="0" bg="red.400">
+    <Flex as="section" id="education" w="full" p="0" bg="red.400">
       <SimpleGrid columns={{ base: 1, md: 2 }} w="full">
         <Center w="full" p="5">
           <Container>
-            <Heading>
+            <Heading as="h2">
               <Logo text={logoExt} color="white" />
             </Heading>
-            <Text my="10">{text}</Text>
+            <Text as="article" my="10">
+              {text}
+            </Text>
             <CampaignModal />
           </Container>
         </Center>

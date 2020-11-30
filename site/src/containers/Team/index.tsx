@@ -44,6 +44,7 @@ export const Team = (props: TeamProps) => {
   return (
     <Flex
       as="section"
+      id="team"
       w="full"
       py="20"
       px={{ base: "5", lg: "20" }}
@@ -69,7 +70,7 @@ export const Team = (props: TeamProps) => {
         ))}
       </Wrap>
 
-      <Heading as="h2" size="xl">
+      <Heading as="h3" size="xl">
         {subtitle}
       </Heading>
     </Flex>

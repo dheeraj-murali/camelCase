@@ -1,4 +1,4 @@
-import { Heading, SimpleGrid, Text, VStack } from "@chakra-ui/react"
+import { Heading, Link, SimpleGrid, Text, VStack } from "@chakra-ui/react"
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 import { v4 as uuid } from "uuid"
@@ -23,6 +23,7 @@ export const Contact = (props: ContactProps) => {
   return (
     <SimpleGrid
       as="section"
+      id="contact"
       columns={{ base: 1, lg: 2 }}
       spacing="40px"
       py={{ base: "10", lg: "24" }}
@@ -33,7 +34,7 @@ export const Contact = (props: ContactProps) => {
     >
       <ContactForm email={email} title={title} />
 
-      <VStack align="left" w="full" pl={{ lg: "20" }}>
+      <VStack as="address" align="left" w="full" pl={{ lg: "20" }}>
         <Heading w="full">
           <Logo text={logoExt} color="white" />
         </Heading>
@@ -50,9 +51,14 @@ export const Contact = (props: ContactProps) => {
           PIN {address.pinCode}
         </Text>
         {phoneNumbers.map(number => (
-          <Text fontWeight="bold" key={uuid()} color="white">
+          <Link
+            href={`tel:${number}`}
+            fontWeight="bold"
+            key={uuid()}
+            color="white"
+          >
             {number}
-          </Text>
+          </Link>
         ))}
       </VStack>
     </SimpleGrid>

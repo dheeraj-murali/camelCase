@@ -64,7 +64,9 @@ export const ContactForm = (props: ContactFormProps) => {
 
   return (
     <VStack spacing={4}>
-      <Heading color="white">{title}</Heading>
+      <Heading as="h2" color="white">
+        {title}
+      </Heading>
 
       <form
         name="contact"

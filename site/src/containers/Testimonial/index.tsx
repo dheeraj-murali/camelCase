@@ -10,6 +10,7 @@ export const Testimonial = (props: TestimonialProps) => {
   return (
     <Flex
       as="section"
+      id="testimonial"
       w="full"
       py="20"
       px={{ base: "5", lg: "20" }}

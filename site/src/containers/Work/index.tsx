@@ -42,7 +42,7 @@ export const Work = (props: WorkProps) => {
   `)
 
   return (
-    <Flex as="section" w="full" p="0">
+    <Flex as="section" id="work" w="full" p="0">
       <SimpleGrid columns={{ base: 1, md: 2 }} w="full">
         {items.map(item => (
           <WorkBanner

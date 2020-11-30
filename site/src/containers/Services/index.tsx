@@ -44,6 +44,7 @@ export const Services = (props: ServicesProps) => {
   return (
     <Flex
       as="section"
+      id="services"
       w="full"
       py="20"
       px={{ base: "5", lg: "20" }}

@@ -20,7 +20,7 @@ export const TestimonialCard = (props: TestimonialCardProps) => {
         </Box>
       </HStack>
 
-      <Text fontSize="sm" fontWeight="light" fontStyle="italic">
+      <Text as="blockquote" fontSize="sm" fontWeight="light" fontStyle="italic">
         {comment}
       </Text>
     </VStack>

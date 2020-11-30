@@ -24,7 +24,8 @@ export const Hero = (props: HeroProps) => {
 
   return (
     <Flex
-      as="section"
+      as="main"
+      id="hero"
       w="full"
       py={{ base: "10", lg: "24" }}
       px={{ base: "5", lg: "20" }}
@@ -37,6 +38,7 @@ export const Hero = (props: HeroProps) => {
     >
       <Flex maxW="md" flexDir="column">
         <Heading
+          as="h1"
           size="2xl"
           dangerouslySetInnerHTML={{
             __html: generateTitle(title.text, title.highlight, highlightColor),

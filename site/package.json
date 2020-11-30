@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "camelcase.in",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "High quality applications production ready in no time",
+  "version": "1.0.0",
+  "author": "Dheeraj Murali",
   "dependencies": {
     "@chakra-ui/gatsby-plugin": "^1.0.0",
     "@chakra-ui/react": "^1.0.1",
@@ -16,7 +16,7 @@
     "gatsby-image": "^2.5.0",
     "gatsby-plugin-manifest": "^2.6.1",
     "gatsby-plugin-offline": "^3.4.0",
-    "gatsby-plugin-react-helmet": "^3.4.0",
+    "gatsby-plugin-react-helmet": "^3.5.0",
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sharp": "^2.8.0",
     "gatsby-source-filesystem": "^2.5.0",
@@ -30,6 +30,7 @@
     "uuid": "^8.3.1"
   },
   "devDependencies": {
+    "@types/react-helmet": "^6.1.0",
     "prettier": "2.1.2"
   },
   "keywords": [
@@ -47,9 +48,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/dheeraj-murali/camelCase"
   }
 }
