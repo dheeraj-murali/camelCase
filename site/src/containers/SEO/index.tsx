@@ -15,13 +15,13 @@ export const SEO = () => {
         content="web development, application, android development, mobile development, kochi, kerala"
       />
 
-      <link rel="canonical" href="http://camelcase.in/" />
+      <link rel="canonical" href="https://camelcase.in/" />
       <script type="application/ld+json">
         {`
         {
           "@context": "https://schema.org",
           "@type": "Organization",
-          "url": "http://camelcase.in/",
+          "url": "https://camelcase.in/",
           "name": "Camelcase tech labs Ptv. Ltd",
           "contactPoint": {
             "@type": "ContactPoint",
